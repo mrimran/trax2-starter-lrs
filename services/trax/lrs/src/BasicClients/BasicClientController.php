@@ -2,6 +2,7 @@
 
 namespace Trax\Lrs\BasicClients;
 
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use Trax\Auth\Controllers\CrudController;
 use Trax\Auth\Traits\HasOwner;
@@ -77,6 +78,21 @@ class BasicClientController extends CrudController
     {
         $crudRequest->setContentField('permissions', ['xapi-scope.all']);
         $this->checkOwner($crudRequest);
+    }
+
+    protected function beforeUpdate(Model $resource, CrudRequest $crudRequest, Request $request)
+    {
+        abort(403);
+    }
+
+    protected function beforeDestroy(Model $resource, CrudRequest $crudRequest, Request $request)
+    {
+        abort(403);
+    }
+
+    protected function beforeDestroyByQuery(CrudRequest $crudRequest, Request $request)
+    {
+        abort(403);
     }
 
     /**
