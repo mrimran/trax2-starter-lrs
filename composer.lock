@@ -5267,11 +5267,11 @@
         },
         {
             "name": "trax2/framework",
-            "version": "2.0.7",
+            "version": "2.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mrimran/trax2-framework.git",
-                "reference": "c844d5bc00b9eac98df677d537ee89fe7af4cb1a"
+                "reference": "6c542cf55957e001d535d3b4d09269df980a28d0"
             },
             "type": "library",
             "autoload": {
@@ -5300,7 +5300,7 @@
                 "trax",
                 "xapi"
             ],
-            "time": "2023-08-04T17:09:26+00:00"
+            "time": "2023-08-04T21:36:56+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
