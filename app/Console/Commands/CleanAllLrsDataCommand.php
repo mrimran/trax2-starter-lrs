@@ -39,7 +39,7 @@ class CleanAllLrsDataCommand extends Command
     public function handle(CleanerService $cleaner)
     {
         print("Cleaning...\n");
-        $cleaner->clearAllStores();
+        $cleaner->clearAllStores(true);
         print("All done!\n");
         return 0;
     }
